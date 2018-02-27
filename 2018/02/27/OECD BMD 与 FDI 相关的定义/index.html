@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Acemoglu (2003) \(Ai \cdot Bi\) Foreign direct investment (FDI) Foreign direct investment (FDI) is a category of investment that reflects the objective of establishing a lasting interest by a resid">
+<meta name="description" content="Acemoglu (2003) \(A_i \cdot B_i\) Foreign direct investment (FDI) Foreign direct investment (FDI) is a category of investment that reflects the objective of establishing a lasting interest by a res">
 <meta name="keywords" content="FDI,OFDI,MNE">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OECD BMD 与 FDI 相关的定义">
 <meta property="og:url" content="http://yoursite.com/2018/02/27/OECD BMD 与 FDI 相关的定义/index.html">
 <meta property="og:site_name" content="六便士的临时站">
-<meta property="og:description" content="Acemoglu (2003) \(Ai \cdot Bi\) Foreign direct investment (FDI) Foreign direct investment (FDI) is a category of investment that reflects the objective of establishing a lasting interest by a resid">
+<meta property="og:description" content="Acemoglu (2003) \(A_i \cdot B_i\) Foreign direct investment (FDI) Foreign direct investment (FDI) is a category of investment that reflects the objective of establishing a lasting interest by a res">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-27T04:03:59.835Z">
+<meta property="og:updated_time" content="2018-02-27T05:23:21.345Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OECD BMD 与 FDI 相关的定义">
-<meta name="twitter:description" content="Acemoglu (2003) \(Ai \cdot Bi\) Foreign direct investment (FDI) Foreign direct investment (FDI) is a category of investment that reflects the objective of establishing a lasting interest by a resid">
+<meta name="twitter:description" content="Acemoglu (2003) \(A_i \cdot B_i\) Foreign direct investment (FDI) Foreign direct investment (FDI) is a category of investment that reflects the objective of establishing a lasting interest by a res">
 
 
 
@@ -366,7 +366,7 @@
 
       
         <p><span class="citation" data-cites="Acemoglu2003p199_230">Acemoglu (2003)</span></p>
-<p><span class="math inline">\(Ai \cdot Bi\)</span></p>
+<p><span class="math inline">\(A_i \cdot B_i\)</span></p>
 <h2 id="foreign-direct-investment-fdi">Foreign direct investment (FDI)</h2>
 <p>Foreign direct investment (FDI) is <strong>a category of investment</strong> that reflects the objective of establishing a <strong>lasting interest</strong> by a resident enterprise in one economy (<strong>direct investor</strong>) in an enterprise (<strong>direct investment enterprise</strong>) that is resident in an economy other than that of the direct investor. The lasting interest implies the existence of <strong>a long-term relationship</strong> between the direct investor and the direct investment enterprise and <strong>a significant degree of influence on the management of the enterprise</strong>. The <strong>direct or indirect ownership of 10% or more of the voting power</strong> of an enterprise resident in one economy by an investor resident in another economy is evidence of such a relationship.</p>
 <p>Some compilers may argue that in some cases an ownership of as little as 10% of the voting power may not lead to the exercise of any significant influence while on the other hand, an investor may own less than 10% but have an effective voice in the management. Nevertheless, the recommended methodology does not allow any qualification of the 10% threshold and recommends its strict application to ensure statistical consistency across countries</p>
@@ -889,46 +889,27 @@
   
 
   
-<!-- MathJax Start -->
-<!-- MathJax documentation: http://docs.mathjax.org/en/latest/index.html -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {  // tex2jax preprocessor
-      inlineMath: [ ['$','$'] ],  // delimiters for in-line math
-      displayMath: [ ['$$','$$'] ],  // delimiters for displayed equations
-      processEscapes: true,  // enable \$ to represent a single dollar sign
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']  // MathJax will not process contents inside these tags 
-    },
-    TeX: {  // TeX/LaTeX input processor
-      equationNumbers: { autoNumber: "AMS" },  // only number those equations in specific AMSmath environments
-      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]  // introduce AMS extensions and suppress generating error messages 
-    },
-    "HTML-CSS": {  // HTML-CSS output processor (this is the default output of MathJax)
-      scale: 110,  // The scaling factor of math with respect to the surrounding text
-      linebreaks: { automatic: true } // automatically breaks the line if necessary
-    },
-    SVG: {  // SVG output processor
-      scale: 110,  // The scaling factor of math with respect to the surrounding text
-      linebreaks: { automatic: true } // automatically breaks the line if necessary
-    },
-    menuSettings: {  // settings for the mathematics contextual menu
-      zoom: "Hover"  // set equation zooming to be triggered by a single mouse click
-    }
-  });
- 
-  MathJax.Hub.Queue(function() { // Fix <code> tags after MathJax finishes running, this is a hack to overcome a shortcoming of Markdown
-      var all = MathJax.Hub.getAllJax(), i;
-      for(i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-  });
-</script>
-<script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">  // link to the MathJax CDN
-</script>
-<!-- MathJax End -->
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
 
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  
 
   
 
